@@ -3,16 +3,21 @@ import Modal from "./components/Modal/Modal";
 import "./components/Modal/Modal.css";
 import Menu from "./components/Menu";
 
+import BtnMenu from "./components/BtnMenu";
+import { BrowserRouter as Router } from "react-router-dom";
+
 import "./App.css";
 
-const App = () => {
+function App() {
   return (
     <>
-      <button className="menu_btn"> Open</button>
-      <Modal />
-      <Menu />
+      <Router>
+        <BtnMenu />
+        <Modal />
+        <Menu />
+      </Router>
     </>
   );
-};
+}
 
 export default App;

@@ -1,8 +1,5 @@
 import React from "react";
-
 import "./Menu.css";
-
-// import { CgMenu } from "./react-icons/Cg";
 
 const Menu = () => {
   return (
